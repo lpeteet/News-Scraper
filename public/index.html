@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News-Scraper</title>
+
+    <!-- CSS Links -->
+      <link rel="stylesheet" type="text/css" href="reset.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.2.1/jq-3.2.1/dt-1.10.16/datatables.min.css"/>
+      <!-- Bootstrap Tables CSS -->
+      <link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.css">
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Javascript Links -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
+      <!-- BootstrapTable File -->
+      <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+
+  </head>
+  <header id="masthead">
+    <ul class="topnav">
+      <li><a class="left">Mongo Scraper</a></li>
+      <li><a class="active" href="/">Home</a></li>
+      <li><a href="#news">Saved Articles</a></li>
+      <li><a href="/scrape" class="btn btn-default redbtn">Scrape New Articles!</a></li>
+      <!-- <li class="right"><a href="#about">About</a></li> -->
+    </ul>
+  </header>
+  <body>
+    <div id="wrapper">
+      <h1 align="center">All the News That's Fit to Scrape</h1>
+      <div id="articles"></div>
+      <div id="notes"></div>
+      <div class="container page-body main">
+        <div class="row">
+            <div class="col content">
+                <div id="dataDiv">
+                    <!-- <table data-toggle="table" class="display table table-bordered" data-url="php/process.php?method=fetchdata"> -->
+                    <table data-toggle="table" class="display table table-bordered" id="clienti">
+                        <thead>
+                          <tr class="school-row">
+                            <!-- SCHOOL GUIDE ORIGINAL CODE
+                              <th data-field="school.name">School</th>
+                              <th data-field="2014.student.size">Student Size</th>
+                              <th data-field="2014.admissions.sat_scores.average.overall">SAT</th>
+                             -->
+                            <th data-field="id">ID</th>
+                            <th data-field="title">Title</th>
+                            <th data-field="link">Link</th>
+                          </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

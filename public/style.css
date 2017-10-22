@@ -1,0 +1,87 @@
+body {
+    background-image: url("NewsClippingBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    /* 
+    background-color: #F2F6D0
+    background-color: #cccccc;
+    */
+  } 
+  #wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+  }
+  #articles {
+    display: inline-block;
+    overflow: auto;
+    width: 60%;
+    height: 700px;
+    color: white;
+  }
+  #notes {
+    float: right;
+    width: 30%;
+    color: white;
+  }
+  textarea, input {
+    display: block;
+    width: 100%;
+    background-color: #FCF5C7;
+  }
+  input {
+    height: 36px;
+    font-size: 24px;
+  }
+  textarea {
+    height: 200px;
+    font-size: 18px;
+  }
+  h1 {
+    color: white;
+  }
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(70, 91, 209);
+  }
+
+  ul.topnav li {float: left;}
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  ul.topnav li.redbtn {
+    display: block;
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+  }
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
+  ul.topnav li a.active {background-color: #4CAF50;}
+  ul.topnav li button:hover:not(.active) {background-color: #111;}
+  ul.topnav li button.active {background-color: #4CAF50;}
+
+  ul.topnav li.right {float: right;}
+  ul.topnav li.left {float: left;}
+
+  @media screen and (max-width: 600px){
+      ul.topnav li.right, 
+      ul.topnav li {float: none;}
+  }
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+  }
