@@ -56,6 +56,7 @@ $.getJSON("/articles", function(data) {
 
 $('#clienti').on('click-cell.bs.table', function (field, value, row, $el) {
   if (value != "type") {
+    console.log("Inside #clienti.on.click-cell");
       // alert($el.id+"-"+$el.name+"-"+$el.type);
       // alert("Selected Row's ID: '" + $el.id + "'")
 
@@ -103,7 +104,7 @@ $(document).on("click", "p", function() {
     });
 });
 
-// When you click the savenote button
+// When you click the save note button
 $(document).on("click", "#savenote", function() {
   // Grab the id associated with the article from the submit button
   var thisId = $(this).attr("data-id");
